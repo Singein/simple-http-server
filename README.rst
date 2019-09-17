@@ -1,3 +1,7 @@
-simple-ftp
+SHTTP
 
-python -m sftp 8000
+install
+pip install shttp
+
+quick start
+python -m shttp 8000
