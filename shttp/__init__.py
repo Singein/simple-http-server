@@ -1,6 +1,6 @@
 import sys
 import http
-from sftp.ftp import SimpleHTTPRequestHandler
+from shttp.handler import SimpleHTTPRequestHandler
 
 
 def cli(HandlerClass=SimpleHTTPRequestHandler,

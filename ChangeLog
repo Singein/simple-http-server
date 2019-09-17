@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+v0.1.1
+------
+
+* add default port 8000
+
 v0.1
 ----
 

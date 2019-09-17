@@ -83,7 +83,6 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
 
     def deal_post_data(self):
         content_type = self.headers['content-type']
-        print(self.headers)
         if not content_type:
             return (False, "Content-Type header doesn't contain boundary")
         boundary = content_type.split("=")[1].encode()
@@ -94,7 +93,6 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             return (False, "Content NOT begin with boundary")
         line = self.rfile.readline()
         remainbytes -= len(line)
-        print(line.decode())
         fn = re.findall(
             r'Content-Disposition: form-data; name=".*"; filename="(.*)"', line.decode())
         if not fn:
