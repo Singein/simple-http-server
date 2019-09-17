@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+v0.3.0
+------
+
+* fixed: 修复了无法get到文件的错误
+* ci: update setup.cfg
 * docs: update readme
 * upload ChangeLog
 
