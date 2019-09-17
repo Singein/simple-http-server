@@ -8,4 +8,7 @@ def cli(HandlerClass=SimpleHTTPRequestHandler,
     http.server.test(HandlerClass, ServerClass, port=port)
 
 
-cli(port=int(sys.argv[1]))
+if len(sys.argv) > 1:
+    cli(port=int(sys.argv[1]))
+else:
+    cli(port=8000)
